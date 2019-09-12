@@ -22,12 +22,10 @@ sowLambda2 <- 0.53214
 
 addLGPCurveToPlot <- function(plot, dataInPlot, lambda1, lambda2){
   
-  countsVector <- nrow(dataInPlot)
+  LGPCurve <- dLGP(nrow(dataInPlot), lambda1, lambda2)
   # dataInPlot is the data file used to draw whichever plot you pass to this function
-  
-  LGPCurve <- dLGP(countsVector, lambda1, lambda2)
   # dLGP() returns numeric vectors of probabilities
-  # use this vector to draw LGP curve 
+    # use this vector to draw LGP curve 
   
   show(plot + geom_line(LGPCurve))
   # overlay Lagrangian Poisson Distribution on plot passed as argument 
