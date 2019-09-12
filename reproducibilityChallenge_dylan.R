@@ -35,5 +35,3 @@ addLGPCurveToPlot <- function(plot, dataInPlot, lambda1, lambda2){
 }
 
 addLGPCurveToPlot()
-
-countsVector <- nrow(artho)
