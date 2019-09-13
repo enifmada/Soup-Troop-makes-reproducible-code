@@ -6,7 +6,7 @@ cole_arthropod_data_1946 <- read_csv('cole_arthropod_data_1946.csv')
 
 plot_spider_counts <- function(spider_data) {
   
-  g_spiders <- ggplot(spider_data, aes(x=spider_counts, y=arthropod_count_index)) +
+  g_spiders <- ggplot(spider_data, aes(x=arthropod_count_index, y=spider_counts)) +
     geom_point(size = 3) + xlab("# of spiders") + ylab("count")
   g_spiders
   
