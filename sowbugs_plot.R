@@ -6,7 +6,7 @@ cole_arthropod_data_1946 <- read_csv('cole_arthropod_data_1946.csv')
 
 plot_sowbug_counts <- function(sowbug_data) {
   
-  g_sowbugs <- ggplot(sowbug_data, aes(x=sowbug_counts, y=arthropod_count_index)) +
+  g_sowbugs <- ggplot(sowbug_data, aes(x=arthropod_count_index, y=sowbug_counts)) +
     geom_point(size = 3) + xlab("# of sowbugs") + ylab("count")
   g_sowbugs
   
