@@ -1,6 +1,6 @@
 
 
-plot_poisson_spider_counts <- function(spider_data) {
+plot_spider_counts <- function(spider_data) {
   
   g_spiders <- ggplot(spider_data, aes(x=k_number_of_arthropods, y=C_count_of_boards_with_k_spiders)) +
     geom_point(size = 3) + xlab("# of spiders") + ylab("count")
@@ -20,7 +20,7 @@ plot_poisson_spider_counts <- function(spider_data) {
   
   return(g_spiders)
 }
-plot_poisson_spider_counts(cole_arthropod_data_1946)
+plot_spider_counts(cole_arthropod_data_1946)
 
 
 
