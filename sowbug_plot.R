@@ -24,4 +24,4 @@ poisson_to_n = function(data_length, lambda){
 sowbug_poisson = poisson_to_n(arth_length, mean_sowbugs)
 
 plt = ggplot() + geom_point(data=arth_data, aes(x=arthropod_count_index, y=sowbug_counts/total_sowbugs))+
-  geom_line(data=arth_data, aes(x=arthropod_count_index, y=sowbug_poisson))
+  geom_line(data=arth_data, aes(x=arthropod_count_index, y=sowbug_poisson), linetype='dashed', colour='#006400')
